@@ -1,0 +1,125 @@
+<div class="row">
+    <div class="col-sm-12">
+      <app-card title="Orders Overview" cardClass="card-datatable">
+        <div class="order_overview_area">
+          <div class="order_view_search">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <input class="form-control input-md" id="email" type="text" placeholder="Order Number">
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <input class="form-control input-md" id="email" type="text" placeholder="Customer">
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <input class="form-control input-md" id="email" type="text" placeholder="Product">
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <input class="form-control input-md" id="email" type="text" placeholder="Seller SKU">
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <input class="form-control input-md" id="email" type="text" placeholder="Payment">
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <input class="form-control input-md" id="email" type="text" placeholder="Delivery Option">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <app-card class="padding__left" [cardOptionBlock]="true">
+                  <input class="form-control" type="date" />
+                </app-card>
+              </div>
+            </div>
+          </div>
+          <div class="order_view_search_btn">
+            <button class="btn custom__btn"> Search </button>
+          </div>
+        </div>
+          <!-- <a class="add_btn" [routerLink]="['/products/add-product-from']"> Add Product  </a> -->
+        <div class="table-responsive">
+          <table datatable class="table table-striped table-bordered nowrap table-hover">
+            <thead>
+              <tr>
+                  <th>Document</th>
+                  <th>Order No. </th>
+                  <th>Order date </th>
+                  <th>Pending Since </th>
+                  <th>Retail Price</th>
+                  <th>Status </th>
+                  <th>Actions </th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>$320,800</td>
+            </tr>
+            </tbody>
+  
+            <tfoot></tfoot>
+          </table>
+        </div>
+      </app-card>
+    </div>
+  </div>
+  

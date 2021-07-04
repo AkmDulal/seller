@@ -1,0 +1,136 @@
+<div class="page-body">
+    <div class="row">
+      <div class="col-sm-12">
+        <app-card title="Promotion Detail">
+          <form class="editForm" novalidate>
+              <div class="row">
+                
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select class="form-control" >
+                      <option value>Promotion Type *</option>
+                      <optgroup label="Climbing">
+                        <option value="pitons">Pitons</option>
+                        <option value="cams">Cams</option>
+                        <option value="nuts">Nuts</option>
+                        <option value="bolts">Bolts</option>
+                        <option value="stoppers">Stoppers</option>
+                        <option value="sling">Sling</option>
+                      </optgroup>
+                      <optgroup label="Skiing">
+                        <option value="skis">Skis</option>
+                        <option value="skins">Skins</option>
+                        <option value="poles">Poles</option>
+                      </optgroup>
+                    </select>
+                  
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <input class="form-control input-md" id="email" name="email" type="text" placeholder="Promotion Name *">
+                    </div>
+                  </div>
+                <div class="col-md-6 padding_top">
+                    <app-card class="padding__left " [cardOptionBlock]="true">
+                    <div class="form-group padding_top">
+                      <input class="form-control padding_top " type="date">
+                    </div>
+                </app-card>
+                  </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <input class="form-control input-md" id="email" name="email" type="text" placeholder="Promotion Level *">
+                    </div>
+                  </div>
+              </div>
+              <!-- <div class="form-group text-center">
+                <button type="button" uiSref="work" class="btn btn-primary btn-raised" > Able Pro <span style="margin-left:10px;"><i class="feather icon-chevron-right"></i></span></button>
+              </div> -->
+          </form>
+        </app-card>
+
+
+        <app-card [title]="'Main Product'" [blockClass]="'model-btn-card'" [cardOptionBlock]="true">
+            <ul class="model-btn">
+              
+              <li>
+                <!-- modal large-->
+                <button type="button" class="btn btn-primary ripple light" (click)="modalLarge.show()">Add Product</button>
+                <app-modal-basic #modalLarge [dialogClass]="'modal-lg'">
+                  <div class="app-modal-header">
+                    <h4 class="modal-title">Select Promotion Product</h4>
+                    <button type="button" class="close basic-close" (click)="modalLarge.hide()">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="app-modal-body">
+                    <div class="table-responsive">
+                        <table datatable class="table table-striped table-bordered nowrap table-hover">
+                          <thead>
+
+                            
+	
+
+	
+
+	
+
+	
+
+	
+
+                            <tr>
+                                <th>Product Picture</th>
+                                <th>Product Name </th>
+                                <th>SKU</th>
+                                <th>Retail Price</th>
+                                <th>Sale Price</th>
+                                <th>Available Stock </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                          </tr>
+                          </tbody>
+                
+                          <tfoot></tfoot>
+                        </table>
+                      </div>
+                  </div>
+                  <div class="app-modal-footer">
+                    <button type="button" class="btn btn-default ripple" (click)="modalLarge.hide()">Close</button>
+                    <button type="button" class="btn btn-primary ripple light">Save changes</button>
+                  </div>
+                </app-modal-basic>
+              </li>
+             
+            </ul>
+          </app-card>
+  
+
+        <app-card [title]="'Promotion History'" [blockClass]="'model-btn-card'" [cardOptionBlock]="true">
+            
+          </app-card>
+  
+  
+  
+  
+  
+  
+  <div>
+
+  </div>
+  
+
+  
+  
+      </div>
+    </div>
+  </div>

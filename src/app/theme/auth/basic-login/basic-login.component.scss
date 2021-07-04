@@ -1,0 +1,114 @@
+body.theme1{
+	background-color: #fff !important;
+}
+.form-login-body .login-desk {
+	filter: drop-shadow(0 0 13.5px rgba(0, 0, 0, 0.09));
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.form-login-body .login-desk .detail-box {
+	background-color: #FFF;
+	padding: 20px;
+}
+.form-login-body {
+    background-image: url("../../../../assets/images/bg.jpg");
+    background-size: cover;
+    height: 100%;
+}
+.form-login-body .login-desk .detail-box .detailsh {
+	text-align: center;
+}
+.form-login-body .login-desk .detail-box .detailsh {
+	text-align: center;
+}
+.form-login-body .login-desk .detail-box .help {
+	width: 450px;
+	margin-top: 30px;
+	// margin-bottom: 50px;
+}
+.form-login-body .login-desk .detail-box .detailsh h3 {
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+}
+.form-login-body .login-desk .detail-box .detailsh p {
+	font-size: .8rem;
+}
+.form-login-body .login-desk .loginform {
+	background-color: #4c56c0;
+	text-align: center;
+	color: #FFF;
+	padding: 50px;
+}
+.form-login-body .login-desk .loginform h4 {
+	color: #FFF;
+	font-size: 1.3rem;
+}
+
+.form-login-body .login-desk .loginform .login-det .btn-danger {
+	width: 100%;
+	border-radius: 0px;
+	background-color: #fa607e;
+	border-radius: 50px;
+}
+
+.form-login-body .login-desk .loginform .social-link ul {
+	float: right;
+	margin-top: 30px;
+}
+.form-login-body .login-desk .loginform .social-link ul li {
+	float: left;
+	padding: 15px;
+	font-size: .9rem;
+}
+.form-login-body .login-desk .loginform a {
+	color: #FFF;
+}
+.logo {
+    width: 150px;
+}
+.login__box {
+	width: 33%;
+	float: left;
+	display: block;
+}
+.login__box i {
+	font-size: 30px;
+padding: 15px 0;
+color: #fa607e;
+}
+.login__box_text span {
+	float: left;
+font-size: 32px;
+font-weight: lighter;
+width: 40px;
+border: 1px solid #2222;
+margin-right: 10px;
+}
+
+.login__box_text p {
+	float: left;
+text-align: left;
+font-size: 14px !important;
+line-height: 19px;
+padding-top: 10px;
+}
+.login__box img {
+	width: 45px;
+	display: none;
+}
+.detailsh h3 {
+	padding-bottom: 10px;
+}
+.bottom_class {
+	width: 100%;
+	float: left;
+	letter-spacing: .6px;
+}
+.bottom_class span {
+	color: #ff839b !important;
+	font-weight: 600;
+	cursor: pointer;
+}
+.bottom_class span:hover {
+	color: #222 !important;
+}
