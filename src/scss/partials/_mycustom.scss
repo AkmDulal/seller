@@ -95,12 +95,28 @@
 	width: 100%;
 	float: left;
 	display: block;
+	background: #f2f3f7 !important;
+}
+.seller__form_header {
+	width: 100%;
+	float: left;
+	display: block;
 	background: #fff !important;
+	padding: 20px 0;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,.11);
 }
 
 .saller___form {
-	// background: #2222;
 	padding: 20px;
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+.saller___form .card .card-block {
+	padding: 50px 40px;
+}
+.mb-30{
+	margin-bottom: 20px;
 }
 
 .saller___form_header {
@@ -115,7 +131,33 @@
 	text-align: left;
 }
 
+label {
+	font-weight: 500 !important;
+	color: #666 !important;
+}
+.input-group-text {
+	color: #fff !important;
+}
+.form-control-default {
+	font-weight: 500 !important;
+	color: #666 !important;
+}
+.manage__tab_menu {
+	width: 100%;
+	float: right;
+	display: block;
+}
 
+.md-tabs .nav-link.active  {
+    color: #0b1e3d !important;
+}
+.tab__min_hight {
+	width: 100%;
+	float: left;
+	display: block;
+	overflow: inherit !important;
+	min-height: 500px;
+}
 .add_btn {
 	width: auto;
 	float: left;
@@ -126,7 +168,7 @@
 	margin-bottom: 20px;
 }
 .order_view_search {
-	width: 90%;
+	width: 100%;
 	float: left;
 	display: block;
 }
@@ -161,3 +203,257 @@
 .padding_top .card .card-block {
 	padding-top: 0px !important;
 }
+.sir__chahida {
+	width: auto;
+	float: left;
+	display: block;
+}
+.sir__chahida_right {
+	float: right;
+}
+
+.sir__chahida_right .dropdown-toggle::after {
+	border-right: transparent !important;
+	border-bottom: none !important;
+	border-left: transparent !important; 
+}
+.seller_icon {
+	float: right;
+}
+.sell_price_td_area {
+	position: relative;
+}
+.sell_price_td_area .seller_icon {
+	display: none;
+	cursor: pointer;
+}
+.sell_price_td_area:hover .seller_icon {
+
+	display: block;
+}
+
+.sell_price_area {
+	position: absolute;
+	top: 70px;
+	left: -200px;
+	/* background: #2222; */
+	padding: 15px;
+	width: 400px;
+	border: 1px solid #2222;
+}
+.sell__btn {
+	width: auto;
+	float: left;
+	display: block;
+	padding: 10px;
+	border: 1px solid #2222;
+	font-size: 14px;
+	margin-right: 15px;
+}
+
+.product_attributes_area {
+	width: 85%;
+	display: block;
+	margin: auto;
+}
+.class__lable {
+	width: 30%;
+	float: left;
+	margin-top: 10px;
+	font-size: 13px;
+	font-weight: revert !important;
+	color: #000 !important;
+}
+.class__lable .form-control {
+	color: #000 !important;
+	font-size: 13px !important;
+}
+.class__input {
+	width: 70%;
+	float: left;
+}
+.hide_area {
+	padding-top: 30px;
+}
+
+.less_more_btn {
+	border: 1px solid #2222;
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px 0;
+	background: transparent;
+}
+.margin_bottom {
+	margin-bottom: 20px !important;
+}
+.ng-star-inserted {
+	border: none !important;
+}
+.cooller_family {
+	width: 100%;
+	float: left;
+	display: block;
+	padding: 15px;
+	background: #f9f9f9;
+	border: 3px dotted #2222;
+}
+.cooller_family_from_group {
+	border: 3px dotted #2222;
+	padding: 10px;
+}
+.vareant_information {
+	border: 1px solid #2222;
+	padding: 10px 31px;
+}
+.vareant_information___text {
+	margin: 0;
+	padding: 17px 0;
+	font-size: 13px;
+}
+.vareant_information___text i {
+	color: #3698e8;
+	font-size: 18px;
+	padding-right: 5px;
+}
+.height__600 .card-block {
+	min-height: 600px !important;
+}
+.services_thred {
+	width: 70%;
+	margin-top: 20px;
+}
+.m__top {
+	margin-top: 30px;
+}
+.date__field {
+	width: 100% !important;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+	background-color: #fff !important;
+}
+.policy__summery {
+	width: 100%;
+	float: left;
+	display: block;
+	padding: 15px;
+	border: 1px solid #2222;
+	margin-bottom: 15px;
+}
+.policy__summery span {
+	font-weight: 600;
+	color: #0b1e3d;
+}
+.bussiness__advisor__cntn {
+	width: 100%;
+	float: left;
+	display: block;
+	margin-bottom: 20px;
+}
+.bussiness__advisor__cntn span {
+	color: #fa541c;
+	background: #fff2e8;
+	padding: 4px 10px;
+	margin-right: 5px;
+	font-size: 11px;
+	text-align: center;
+	border: 1px solid #ffbb96;
+	border-radius: 5px;
+}
+
+.model__btn_style {
+	float: right;
+	margin-left: 20px;
+}
+
+.model__btn_style__btn {
+	background: transparent;
+	border: 1px solid #2222;
+	padding: 6px 35px;
+}
+.width__height {
+	width: 100%;
+	float: left;
+	display: block;
+}
+.nodata {
+	text-align: center;
+	padding: 50px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.data__search {
+	width: 100%;
+	margin-bottom: 24px;
+	float: left;
+}
+.data__search .model__btn_style__btn {
+	float: right;
+	margin-left: 5px;
+}
+.style__file__btn {
+	padding: 5px 10px !important;
+	float: left;
+}
+.transaction__left_area {
+	width: auto;
+	float: left;
+	display: block;
+}
+
+.transaction__left_area_two {
+	margin-left: 15px;
+}
+
+.transaction__left_area_two .mat-form-field-wrapper {
+	height: 78px;
+}
+.single_from_area {
+	width: 100%;
+	float: left;
+	display: block;
+	padding-bottom: 15px;
+}
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	display: block;
+	width: 200px;
+	text-align: center;
+	border: 1px solid #2222;
+	padding: 50px 0;
+}
+  
+  .upload-btn-wrapper .btn {
+	border: 2px solid gray;
+	color: gray;
+	background-color: white;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+  }
+  .seller_logo_box_img {
+	width: 130px;
+	float: left;
+	text-align: center;
+	margin-left: 35px;
+}
+  .seller_logo_box_img img  {
+	  width: 100%;
+  }
+  
+  .seller_logo_box_img h3  {
+	  font-size: 14px;
+  }
+

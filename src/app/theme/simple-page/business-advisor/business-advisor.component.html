@@ -1,0 +1,141 @@
+<div class="page-body">
+    <div class="row">
+      <div class="col-sm-4"> 
+            <app-card title="Announcement">
+                <p>  Attention Sellers! You can now check your overall performance including the number of orders and income generated. Familiarize yourself with Business Advisor through FAQs. </p>
+            </app-card>
+        </div>
+      <div class="col-sm-4"> 
+            <app-card title="Tips and Tricks">
+                <a [routerLink]="['#']" class="bussiness__advisor__cntn"> <span>  Hot  </span>  Participate in campaigns to optimize sales! </a>
+                <a [routerLink]="['#']" class="bussiness__advisor__cntn"> <span>  New  </span> Increase sales with Vouchers </a>
+                <a [routerLink]="['#']" class="bussiness__advisor__cntn"> <span>  Alert  </span>  Always comply to Daraz policies! </a>
+            </app-card>
+        </div>
+      <div class="col-sm-4"> 
+            <!-- <app-card > -->
+                <a [routerLink]="['#']">
+                    <img src="https://img.alicdn.com/tfs/TB1FlaqzHr1gK0jSZFDXXb9yVXa-400-170.png" alt="">
+                </a>
+            <!-- </app-card> -->
+        </div>
+        <div class="col-sm-12">
+            
+            <app-card>
+                <div class="row">
+                    <div class="col-sm-4"> </div>
+          
+                    <div class="col-sm-4"> 
+                    <app-card >
+    
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker touchUi #picker></mat-datepicker>
+                        </mat-form-field>
+                    
+                    
+                    </app-card>
+                    </div>
+    
+                    <div class="col-sm-4"> </div>
+                </div>
+            </app-card>
+        </div>
+
+        <div class="col-sm-12"> 
+            <app-card title="Key Metrics">
+                <div class="row">
+                    <div class="col-sm-2">
+                      <div class="card card-border-default">
+                        <div class="card-header">
+                          <a href="javascript:;" class="card-title">Revenue </a>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="task-due"><strong class="label label-danger">0</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="card card-border-default">
+                        <div class="card-header">
+                          <a href="javascript:;" class="card-title">Visitors </a>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="task-due"><strong class="label label-danger">0</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="card card-border-default">
+                        <div class="card-header">
+                          <a href="javascript:;" class="card-title">Conversion Rate </a>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="task-due"><strong class="label label-danger">0</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="card card-border-default">
+                        <div class="card-header">
+                          <a href="javascript:;" class="card-title">Revenue per Buyer </a>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="task-due"><strong class="label label-danger">0</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="card card-border-default">
+                        <div class="card-header">
+                          <a href="javascript:;" class="card-title">Pageviews </a>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="task-due"><strong class="label label-danger">0</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="card card-border-default">
+                        <div class="card-header">
+                          <a href="javascript:;" class="card-title">Buyers </a>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="task-due"><strong class="label label-danger">0</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div id="chart6"></div>
+                    </div>
+                </div>
+            </app-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+:host {
+    display: flex;
+    justify-content: start;
+    border: solid 1px silver;
+  }
+
+  p.active {
+    color: blue;
+    font-weight: bold;
+  }
+  div.container {
+    padding: 0 !important;
+    height: 30em;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  div.content {
+    min-height: 50em;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 380px;
+    transition: 0.2s linear;
+    top: 70px;
+}
+.nofixed {
+      position: static;
+      transition: 0.2s linear;
+      top: -50px;
+  }
+
+
+
+
+
+
+  

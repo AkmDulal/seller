@@ -7,10 +7,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ManageProductsComponent implements OnInit {
-
+  showMe:boolean=false
   constructor() { }
 
   ngOnInit(): void {
   }
+  toogleTag(e: Event){
+    this.showMe=!this.showMe
+  }
+
 
 }

@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-sm-12">
+      <app-card title="Policy Compliance" cardClass="card-datatable">
+        <div class="row">
+            <div class="col-sm-4">
+                <app-card title="What are Non-Compliance Points?" cardClass="card-datatable">
+                    <p>  Non-Compliance Points (NCP) are a points-based system to measure the compliance of our sellers to Daraz Seller Policies. Sellers who are found to be not in adherence to our policies may receive either Non-Compliance Points removal of products or account restrictions. </p>
+                </app-card>
+            </div>
+            <div class="col-sm-4">
+                <app-card title="Your Current Points" cardClass="card-datatable">
+                    <div class="custom-slider">
+                        <ngx-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider>
+                    </div>
+                    <p> Awesome! You are a role model. Thank you for adhering to our policies. </p>
+                </app-card>
+            </div>
+           
+            <div class="col-sm-4">
+                <app-card title="Wonderful! You have not been penalized recently yet" cardClass="card-datatable">
+                    <a [routerLink]="['/policy-compliance-summary']" class="policy__summery"> <span> 0 </span> Number of Non-compliance records  </a>
+                    <a [routerLink]="['/policy-compliance-summary']" class="policy__summery"> <span> 500 </span>  Sign up as a Local Seller  </a>
+                </app-card>
+            </div>
+            <div class="col-sm-4">
+                <app-card title="Limitation" cardClass="card-datatable">
+                    <h6> Order Volume Limit <b> 0 </b> </h6>
+                    <p> Orders quota left for today. <br>
+                        From0total orders possible per day <br>
+                        Quota resets at 00:00. </p>
+                        <a [routerLink]="['/policy-compliance-summary']" style="float: right; font-weight: 600;"> Check Pending Order  </a>
+                </app-card>
+            </div>
+        </div>
+      </app-card>
+    </div>
+</div>

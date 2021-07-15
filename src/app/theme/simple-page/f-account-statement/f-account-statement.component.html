@@ -1,0 +1,173 @@
+<div class="row">
+    <div class="col-sm-12">
+      <app-card title="Account Statement" > 
+        <mat-form-field appearance="fill">
+            <mat-label>Period</mat-label>
+            <mat-select>
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <ul class="model-btn model__btn_style">
+          
+            <li>
+              <!-- modal large-->
+              <button type="button" class=" ripple light model__btn_style__btn" (click)="modalLarge.show()">View Export History</button>
+              <app-modal-basic #modalLarge [dialogClass]="'modal-lg'">
+                <div class="app-modal-header">
+                  <h4 class="modal-title">Exports</h4>
+                  <button type="button" class="close basic-close" (click)="modalLarge.hide()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="app-modal-body">
+                    
+                  <div class="data__search">
+                    <form>
+                        <div class="pseudo-search model__btn_style__btn">
+                            <input type="text" placeholder="User name, Type" autofocus required>
+                            <button class="fa fa-search" type="submit"></button>
+                        </div>
+                    </form>
+                    <button type="button" class=" ripple light model__btn_style__btn">Refresh</button>
+                  </div>
+
+                  <div class="table-responsive">
+                      <table datatable class="table table-striped table-bordered nowrap table-hover">
+                        <thead>
+                          <tr>
+                              <th>Date</th>
+                              <th>Type </th>
+                              <th>User name</th>
+                              <th>Status</th>
+                          </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                        </tbody>
+              
+                        <tfoot></tfoot>
+                      </table>
+                    </div>
+                </div>
+                <div class="app-modal-footer">
+                  <button type="button" class="btn btn-default ripple" (click)="modalLarge.hide()">Close</button>
+                  <button type="button" class="btn btn-primary ripple light">Save changes</button>
+                </div>
+              </app-modal-basic>
+            </li>
+           
+          </ul>
+
+
+
+          <ul class="model-btn model__btn_style">
+          
+            <li>
+              <!-- modal large-->
+              <button type="button" class=" ripple light model__btn_style__btn" (click)="modalLarge.show()">Export</button>
+              <app-modal-basic #modalLarge [dialogClass]="'modal-lg'">
+                <div class="app-modal-header">
+                  <h4 class="modal-title">Exports</h4>
+                  <button type="button" class="close basic-close" (click)="modalLarge.hide()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="app-modal-body">
+                    
+                  <div class="data__search">
+                    <form>
+                        <div class="pseudo-search model__btn_style__btn">
+                            <input type="text" placeholder="User name, Type" autofocus required>
+                            <button class="fa fa-search" type="submit"></button>
+                        </div>
+                    </form>
+                    <button type="button" class=" ripple light model__btn_style__btn">Refresh</button>
+                  </div>
+
+                  <div class="table-responsive">
+                      <table datatable class="table table-striped table-bordered nowrap table-hover">
+                        <thead>
+                          <tr>
+                              <th>Date</th>
+                              <th>Type </th>
+                              <th>User name</th>
+                              <th>Status</th>
+                          </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                            <tr>
+                                <td>Jul 12, 2021 1:38:17 PM</td>
+                                <td>AllTransactions</td>
+                                <td>antiskh.rahman@gmail.com</td>
+                                <td> <a href="#"> Download </a> <br> 0 times download </td>
+                            </tr>
+                        </tbody>
+              
+                        <tfoot></tfoot>
+                      </table>
+                    </div>
+                </div>
+                <div class="app-modal-footer">
+                  <button type="button" class="btn btn-default ripple" (click)="modalLarge.hide()">Close</button>
+                  <button type="button" class="btn btn-primary ripple light">Save changes</button>
+                </div>
+              </app-modal-basic>
+            </li>
+           
+          </ul>
+
+          <div class="width__height">
+              <p class="nodata"> no data </p>
+          </div>
+
+      </app-card>
+
+      <!-- <app-card [blockClass]="'model-btn-card'" [cardOptionBlock]="true">
+        
+      </app-card> -->
+    </div>
+</div>

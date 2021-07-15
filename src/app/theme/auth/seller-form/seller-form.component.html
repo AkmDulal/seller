@@ -1,58 +1,121 @@
+<div class="seller__form_header">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+          <img src="../../../../assets/images/flag_bd.png" alt="flag"> 
+        </div>
+    </div>
+  </div>
+</div>
+
 <section class="seller__form_area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="saller___form">
                     <div class="saller___form_header">
-                        <h3> Crossborder - Seller Registration Form </h3>
-                        <p> General Information </p>
+                        <!-- <h3> Mall Seller  </h3> -->
                     </div>
                     
 
                     <app-card>
                         <form #validationForm="ngForm" class="editForm" novalidate>
                             <div class="row">
-                              <div class="col-md-6">
+                              
+
+                              <div class="col-md-4">
                                 <div class="form-group">
-                                  <label class="form-control-label" for="email">
-                                    Shop Name <span class="requered_filed"> * </span></label>
-                                  <input class="form-control input-md" id="email" name="email" type="text" >
-                                 
+                                  <label class="form-control-label" for="email">Account Type <span class="requered_filed"> * </span></label>
+                                </div>
+                              </div>
+                              <div class="col-md-7">
+                                <div class="radio radio-inline">
+                                  <label>
+                                    <input type="radio" name="radio" checked="checked">
+                                    Individual
+                                  </label>
+                                </div>
+                                <div class="radio radio-inline">
+                                  <label>
+                                    <input type="radio" name="radio" checked="checked">
+                                    Business
+                                  </label>
                                 </div>
                               </div>
 
-                              <div class="col-md-6">
+
+                              <div class="col-md-4">
                                 <div class="form-group">
-                                  <label class="form-control-label" for="email">Company Name <span class="requered_filed"> * </span></label>
-                                  <input class="form-control input-md" id="email" name="email" type="text" >
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-7">
+                                <div class="form-group">
+                                  <label class="form-control-label" for="email">Please make sure you have active Business License in order to sell on Daraz as a Corporate </label>
                                 </div>
                               </div>
 
-                              <div class="col-md-6">
+                              <div class="col-md-4">
                                 <div class="form-group">
-                                  <label class="form-control-label" for="email">Name of legal representative - Representante Legal <span class="requered_filed"> * </span></label>
-                                  <input class="form-control input-md" id="email" name="email" type="text" >
+                                  <label class="form-control-label" for="email">Shop Based in <span class="requered_filed"> * </span></label>
                                 </div>
+                              </div>
+                              <div class="col-md-7 mb-30">
+                                  <select name="select" class="form-control form-control-default">
+                                    <option value="opt1"> <img src="../../../../assets/images/flag_bd.png" alt="flag" />  Bangladesh </option>
+                                    <option value="opt2">Type 2</option>
+                                    <option value="opt3">Type 3</option>
+                                    <option value="opt4">Type 4</option>
+                                    <option value="opt5">Type 5</option>
+                                    <option value="opt6">Type 6</option>
+                                    <option value="opt7">Type 7</option>
+                                    <option value="opt8">Type 8</option>
+                                  </select>
                               </div>
 
-                              <div class="col-md-6">
+
+                              <div class="col-md-4">
                                 <div class="form-group">
-                                  <label class="form-control-label" for="email">Company Address (Postal Code needed) <span class="requered_filed"> * </span></label>
-                                  <input class="form-control input-md" id="email" name="email" type="text" >
+                                  <label class="form-control-label" for="email">Shop Based in <span class="requered_filed"> * </span></label>
                                 </div>
+                              </div>
+                              <div class="col-md-7">
+                                <div class="input-group">
+                                  <span class="input-group-prepend">
+                                      <label class="input-group-text">880</label>
+                                  </span>
+                                      <input type="text" class="form-control">
+                                  </div>
                               </div>
 
-                              <div class="col-md-6">
+                            
+
+
+                              <div class="col-md-4">
                                 <div class="form-group">
-                                  <label class="form-control-label" for="email"> Product Category <span class="requered_filed"> * </span></label>
-                                  <input class="form-control input-md" id="email" name="email" type="text" >
+                                  <label class="form-control-label" for="email">Slide to Verify <span class="requered_filed"> * </span></label>
                                 </div>
                               </div>
+                              <div class="col-md-7 mb-30">
+                                <div class="input-group">
+                                  <span class="input-group-prepend">
+                                      <label class="input-group-text"> << </label>
+                                  </span>
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
+
+                              <div class="col-md-4"></div>
+                            <div class="col-md-7">
+                              <div class="form-group">
+                                <button type="button" uiSref="work" class="btn btn-primary btn-raised"  (click)="save(validationForm)"> Submit <span style="margin-left:10px;"><i class="feather icon-chevron-right"></i></span></button>
+                              </div>
+                            </div>
+
+                             
     
                             </div>
-                            <div class="form-group text-center">
-                              <button type="button" uiSref="work" class="btn btn-primary btn-raised"  (click)="save(validationForm)"> Submit <span style="margin-left:10px;"><i class="feather icon-chevron-right"></i></span></button>
-                            </div>
+                            
                         </form>
                       </app-card>
                 </div>

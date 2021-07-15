@@ -54,12 +54,14 @@ const MENUITEMS = [
             state: 'manage-products',
             name: 'Manage products',
             type: 'link',
-          }, {
-            state: 'add-product-from',
-            name: 'Media center',
-            type: 'link',
+          }, 
+          
+          // {
+          //   state: 'add-product-from',
+          //   name: 'Media center',
+          //   type: 'link',
 
-          }
+          // }
         ]
       }, 
 
@@ -109,48 +111,20 @@ const MENUITEMS = [
         ]
       },
 
-      // Store Decoration
-      {
-        state: '',
-        short_label: 'M',
-        name: 'Store Decoration',
-        type: 'sub',
-        icon: 'fa fa-hdd-o',
-        children: [
-          {
-            state: '',
-            name: 'Campaign',
-            target: true
-          }, {
-            state: '',
-            name: 'Bundles',
-            target: true
-          },
-          {
-            state: '',
-            name: 'Seller Voucher',
-            target: true
-          },
-          {
-            state: '',
-            name: 'Seller Picks',
-            target: true
-          }
-        ]
-      },
+
 
       // Growth Center
       {
-        state: '',
+        state: 'growthcenter',
         short_label: 'M',
         name: 'Growth Center',
         type: 'sub',
         icon: 'icon-direction-alt',
         children: [
           {
-            state: '',
-            name: 'Growth Center',
-            target: true
+            state: 'policy-compliance',
+            name: 'Policy Compliance',
+            type: 'link'
           }
         ]
       },
@@ -158,7 +132,7 @@ const MENUITEMS = [
       // Business Advisor
 
       {
-        state: '',
+        state: 'business-advisor',
         short_label: 'S',
         name: 'Business Advisor',
         type: 'link',
@@ -167,92 +141,98 @@ const MENUITEMS = [
 
       // Finance
       {
-        state: '',
+        state: 'finance',
         short_label: 'M',
         name: 'Finance',
         type: 'sub',
         icon: 'fa fa-hand-o-right',
         children: [
           {
-            state: '',
+            state: 'account-statement',
             name: 'Account Statement',
-            target: true
+            type: 'link'
           },
           {
-            state: '',
+            state: 'order-overview',
             name: 'Order Overview',
-            target: true
+            type: 'link'
           },
           {
-            state: '',
+            state: 'transaction-overview',
             name: 'Transaction Overview',
-            target: true
+            type: 'link'
           }
         ]
       },
 
 
       // Infotech University
-      {
-        state: '',
-        short_label: 'M',
-        name: 'Finance',
-        type: 'link',
-        icon: 'fa fa-usd'
-      },
+      // {
+      //   state: '',
+      //   short_label: 'M',
+      //   name: 'Finance',
+      //   type: 'link',
+      //   icon: 'fa fa-usd'
+      // },
 
 
       // Seller Support
       {
-        state: '',
+        state: 'seller-support',
         short_label: 'M',
         name: 'Seller Support',
         type: 'sub',
         icon: 'fa fa-sellsy',
         children: [
           {
-            state: '',
-            name: 'Help Center',
-            target: true
-          },
-          {
-            state: '',
+            state: 'contact-us',
             name: 'Contact Us',
-            target: true
+            type: 'link'
           }
         ]
       },
 
       // Account & Settings
       {
-        state: '',
+        state: 'account-settings',
         short_label: 'M',
         name: 'Account & Settings',
         type: 'sub',
         icon: 'fa fa-assistive-listening-systems',
         children: [
           {
-            state: '',
+            state: 'profile',
             name: 'Profile',
-            target: true
+            type: 'link'
           },
           {
-            state: '',
+            state: 'manage-users',
             name: 'Manage Users',
-            target: true
+            type: 'link'
           },
           {
-            state: '',
+            state: 'account-settings',
             name: 'Account Settings',
-            target: true
-          },
-          {
-            state: '',
-            name: 'Chat Settings',
-            target: true
+            type: 'link'
           }
         ]
       },
+
+      // Seller Documents
+      // {
+      //   state: '',
+      //   short_label: 'M',
+      //   name: 'Seller Documents',
+      //   type: 'sub',
+      //   icon: 'fa fa-assistive-listening-systems',
+      //   children: [
+      //     {
+      //       state: 'profile',
+      //       name: 'Profile',
+      //       type: 'link'
+      //     }
+      //   ]
+      // },
 
 
 

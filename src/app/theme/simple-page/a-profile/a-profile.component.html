@@ -1,0 +1,908 @@
+<!-- <app-card title="Profile">
+    <div class="row leave-card">
+        <div class="col-sm-12"> 
+            <mat-tab-group>
+                <mat-tab label="General01">
+                    <app-card class="p-r-0 p-l-0">
+                        <mat-tab-group>
+                            <mat-tab label="Seller Account"> 
+                                <div class="">
+                                    <h1>  jsdhgkjhfksjh </h1>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Business Information"> Business Information </mat-tab>
+                            <mat-tab label="Bank Account"> Commissions </mat-tab>
+                            <mat-tab label="Warehouse Address"> Delivery Options </mat-tab>
+                            <mat-tab label="Return Address"> Shipping Provider </mat-tab>
+                        </mat-tab-group>
+                    </app-card>
+                </mat-tab>
+                <mat-tab label="Seller Logo"> Seller Logo </mat-tab>
+                <mat-tab label="Commissions"> Commissions </mat-tab>
+                <mat-tab label="Delivery Options"> Delivery Options </mat-tab>
+                <mat-tab label="Shipping Provider"> Shipping Provider </mat-tab>
+                <mat-tab label="Invoice Number"> Invoice Number </mat-tab>
+              </mat-tab-group>
+        </div>
+    </div>
+</app-card> -->
+
+<app-card>
+    <mat-tab-group>
+        <mat-tab label="General"> 
+            <div class="md-tabs">
+                <ngb-tabset>
+                  <ngb-tab title="Seller Account">
+                    <ng-template ngbTabContent>
+                      <div [@fadeInOutTranslate] class="m-t-15">
+                        <app-card title="Seller Account">
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Copy from warehouse address <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <mat-radio-group aria-label="Select an option">
+                                            <mat-radio-button value="1" class="m-r-10">Option 1</mat-radio-button>
+                                            <mat-radio-button value="2">Option 2</mat-radio-button>
+                                          </mat-radio-group>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > First and Last Name <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Address <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Phone Number <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City / Town <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Country/ Region <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Division <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Postcode <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <button mat-button class="color-success">Submit</button>
+                                  </div>
+                                    
+                                </div>
+                            </div>
+                        </app-card>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+
+                  <ngb-tab title="Business Information">
+                    <ng-template ngbTabContent>
+                      <div [@fadeInOutTranslate] class="m-t-15">
+                        <app-card title="Business Information">
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Legal Form <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Address <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Address 2 </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City / Town </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Country/ Region <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City / Town </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Person in Charge Name <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Business Registration Number <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Seller TIN <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Division <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Postcode <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                        <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <button mat-button class="color-success">Submit</button>
+                                  </div>
+                                    
+                                </div>
+                            </div>
+                        </app-card>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+
+                  <ngb-tab title="Bank Account">
+                    <ng-template ngbTabContent>
+                      <div [@fadeInOutTranslate] class="m-t-15">
+                        <app-card title="Bank Account">
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Account Title <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Account Number <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Bank Name </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City / Town </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Branch Name <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Routing Number </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > IBAN <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Tax Category <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                  
+                     
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <button mat-button class="color-success">Submit</button>
+                                  </div>
+                                    
+                                </div>
+                            </div>
+                        </app-card>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+
+                  <ngb-tab title="Warehouse Address">
+                    <ng-template ngbTabContent>
+                      <div [@fadeInOutTranslate] class="m-t-15">
+                        <app-card title="Warehouse Address">
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > First and Last Name <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Address <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Phone Number </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City / Town </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Country/ Region <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Division </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Postcode </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <button mat-button class="color-success">Submit</button>
+                                  </div>
+                                    
+                                </div>
+                            </div>
+                        </app-card>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+
+                  <ngb-tab title="Return Address">
+                    <ng-template ngbTabContent>
+                      <div [@fadeInOutTranslate] class="m-t-15">
+
+
+                        <app-card title="Return Address">
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Copy from warehouse address <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <mat-radio-group aria-label="Select an option">
+                                            <mat-radio-button value="1" class="m-r-10">Yes</mat-radio-button>
+                                            <mat-radio-button value="2">No</mat-radio-button>
+                                          </mat-radio-group>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > First and Last Name <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Address <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Phone Number </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City / Town </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Country/ Region <span style="color: #f00 !important"> * </span> </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Division </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > City </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <label class="form-control-label" > Postcode </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-control class__input " >
+                                            <option value></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                            <div class="single_from_area">
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <button mat-button class="color-success">Submit</button>
+                                  </div>
+                                    
+                                </div>
+                            </div>
+                        </app-card>
+
+
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                </ngb-tabset>
+              </div>
+        </mat-tab>
+        <mat-tab label="Seller Logo"> 
+            <div class="md-tabs">
+                <div class="seller_logo_box">
+                    <app-card title="file upload">
+                        <div class="upload-btn-wrapper">
+                            <i class="fa fa-plus"></i> <br> 
+                            <span> Upload </span>
+                            <input type="file" name="myfile" />
+                        </div>
+                        <div class="seller_logo_box_img">
+                            <h3> Images </h3>
+                            <img src="http://asc-public.oss-ap-southeast-1.aliyuncs.com/lazada-PRD-BD-seller-a330377b-3b65-43e9-968b-4b48dc5716b5.jpeg" alt="">
+                        </div>
+                    </app-card>
+                    
+                    
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Commissions">
+            <div class="md-tabs">
+                <div class="seller_logo_box">
+                    <app-card title="Commission Fees">
+                        <div class="table-responsive">
+                            <table datatable class="table table-striped table-bordered nowrap table-hover">
+                              <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Commission </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                <td>
+                                    <ngb-accordion [closeOthers]="true" #acc="ngbAccordion" class="ngb-accordion">
+                                        <ngb-panel id="ngb-close-p1" title="Root Category">
+                                          <ng-template ngbPanelContent>
+                                            <p>
+                                              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                          </ng-template>
+                                        </ngb-panel>
+                                      </ngb-accordion>
+                                </td>
+                                <td> 	
+                                    5.00</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <ngb-accordion [closeOthers]="true" #acc="ngbAccordion" class="ngb-accordion">
+                                        <ngb-panel id="ngb-close-p1" title=" Bags and Travel">
+                                          <ng-template ngbPanelContent>
+                                            <p>
+                                              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                          </ng-template>
+                                        </ngb-panel>
+                                      </ngb-accordion>
+                                </td>
+                                <td> 	
+                                    5.00</td>
+                              </tr>
+                              </tbody>
+                    
+                              <tfoot></tfoot>
+                            </table>
+                          </div>
+                    </app-card>
+                    
+                    
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Delivery Options"> 
+            <!-- Shipment Provider -->
+            <div class="md-tabs">
+                <div class="seller_logo_box">
+                    <app-card title="Commission Fees">
+                        <div class="table-responsive">
+                            <table datatable class="table table-striped table-bordered nowrap table-hover">
+                              <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Available </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                <td> Economy </td>
+                                <td> <span style="color: #f00 !important"> X </span>	</td>
+                              </tr>
+                              <tr>
+                                <td> Economy </td>
+                                <td> <span style="color: #f00 !important"> X </span>	</td>
+                              </tr>+
+                              </tbody>
+                    
+                              <tfoot></tfoot>
+                            </table>
+                          </div>
+                    </app-card>
+                    
+                    
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Shipping Provider"> 
+            
+            <div class="md-tabs">
+                <div class="seller_logo_box">
+                    <app-card title="Shipment Provider">
+                        <div class="table-responsive">
+                            <table datatable class="table table-striped table-bordered nowrap table-hover">
+                              <thead>
+                                <tr>
+                                    <th>Warehouse ID</th>
+                                    <th>Shipping Provider  </th>
+                                    <th>Package Profile</th>
+                                    <th>Type</th>
+                                    <th>Drop-Off Point Locator</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                              </tr>
+                              </tbody>
+                    
+                              <tfoot></tfoot>
+                            </table>
+                          </div>
+                    </app-card>
+
+                    <app-card title="Request History">
+                        <div class="table-responsive">
+                            <table datatable class="table table-striped table-bordered nowrap table-hover">
+                              <thead>
+                                <tr>
+                                    <th>Warehouse ID</th>
+                                    <th>Original Shipping Provider  </th>
+                                    <th>Changed To</th>
+                                    <th>Package Profile</th>
+                                    <th>Type</th>
+                                    <th>Reason</th>
+                                    <th>Last Updated</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              </tbody>
+                    
+                              <tfoot></tfoot>
+                            </table>
+                          </div>
+                    </app-card>
+                </div>
+            </div>
+        
+        </mat-tab>
+        <mat-tab label="Invoice Number"> 
+            <div class="md-tabs">
+                <div class="seller_logo_box">
+                    <app-card title="Seller Account">
+                        <div class="single_from_area">
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <label class="form-control-label" > Generation Type <span style="color: #f00 !important"> * </span> </label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <select class="form-control class__input " style="width: 100%;" >
+                                    <option value="Use Autoincrement Number"> Use Autoincrement Number</option>
+                                    <option value="Use Order Number"> Use Order Number</option>
+                                    <option value="Provide number manually"> Provide number manually</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="single_from_area">
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <label class="form-control-label" > Invoice Prefix <span style="color: #f00 !important"> * </span> </label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control input-md" id="email" name="email" type="text" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p> Next invoice number will look like this 00020123456 </p>
+                    </app-card>
+                </div>
+            </div>
+        </mat-tab>
+      </mat-tab-group>
+      
+</app-card>
+
+
+

@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-
-
+import { ClickOutsideModule } from 'ng-click-outside';
+import { SimpleScrollSpyModule } from "angular-simple-scroll-spy";
 import { AppComponent } from './app.component';
 import { AdminComponent } from './layout/admin/admin.component';
 import { AuthComponent } from './layout/auth/auth.component';
@@ -53,7 +53,9 @@ import { SellerFormComponent } from './theme/auth/seller-form/seller-form.compon
     AppRoutingModule,
     SharedModule,
     CMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ClickOutsideModule,
+    SimpleScrollSpyModule
   ],
   providers: [
     MenuItems,

@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-lg-2">
                 <div class="form-group">
-                  <input class="form-control input-md" id="email" type="text" placeholder="Order Number">
+                  <input class="form-control input-md" id="email" type="text" placeholder="Order Number" >
                 </div>
               </div>
               <div class="col-lg-2">
@@ -29,21 +29,39 @@
                   <input class="form-control input-md" id="email" type="text" placeholder="Payment">
                 </div>
               </div>
+              
               <div class="col-lg-2">
                 <div class="form-group">
                   <input class="form-control input-md" id="email" type="text" placeholder="Delivery Option">
                 </div>
               </div>
               <div class="col-lg-4">
-                <app-card class="padding__left" [cardOptionBlock]="true">
-                  <input class="form-control" type="date" />
-                </app-card>
+                <mat-form-field class="example-form-field date__field" appearance="fill">
+                  <mat-label>Start Date - End Date</mat-label>
+                  <mat-date-range-input
+                    [formGroup]="campaignOne"
+                    [rangePicker]="campaignOnePicker"
+                    [comparisonStart]="campaignTwo.value.start"
+                    [comparisonEnd]="campaignTwo.value.end">
+                    <input matStartDate placeholder="Start date" formControlName="start">
+                    <input matEndDate placeholder="End date" formControlName="end">
+                  </mat-date-range-input>
+                  <mat-datepicker-toggle matSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+                  <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+                </mat-form-field>
+                
+              </div>
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <label> ... </label>
+                  <input class="form-control input-md" id="email" type="submit" value="Search">
+                </div>
               </div>
             </div>
           </div>
-          <div class="order_view_search_btn">
+          <!-- <div class="order_view_search_btn">
             <button class="btn custom__btn"> Search </button>
-          </div>
+          </div> -->
         </div>
           <!-- <a class="add_btn" [routerLink]="['/products/add-product-from']"> Add Product  </a> -->
         <div class="table-responsive">
